@@ -21,7 +21,7 @@ body {
     color: white;
     text-decoration: none;
     margin: 3px 40px 3px 0px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .sobre:hover {
@@ -35,31 +35,43 @@ header {
 }
 
 .intro {
-      text-align: center;
+    text-align: center;
     margin: 10px 15%;
     border-radius: 5px;
     padding: 10px auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.942);
     color: white;
     font-size: 22px;
 }
 
 .texto {
-    background-color: #b72e00;
+    line-height: 30px;
+    background-color: #d42a13;
     color: rgb(194, 194, 194);
-    margin: 10px 20px 10px 20px;
-    padding: 10px 15px 10px 15px;
+    margin: -60px -20px 10px -20px;
+    padding: 10px 45px 10px 45px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #1b0700;
+    text-align: 20px;
+    font-size: 18px;
 }
 
 strong {
-    color: #200600;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.516);
+    padding: 0px 5px;
 }
 
 a { 
-    color: rgb(255, 206, 114);
+    color: rgb(208, 255, 0);
     text-decoration: underline #000000b7;
+}
+
+a:hover {
+    background-color: #1a1a1a;
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: 0.1s;
 }
 
 .img {
