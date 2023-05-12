@@ -9,10 +9,19 @@ body {
     );
 }
 
+header h1 {
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}   
+
 .menu {
     background-color: black;
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: -1px;
     width: 100%;
     justify-content: right;
 }
@@ -21,7 +30,7 @@ body {
     color: white;
     text-decoration: none;
     margin: 3px 40px 3px 0px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .sobre:hover {
@@ -36,12 +45,12 @@ header {
 
 .intro {
     text-align: center;
-    margin: 10px 15%;
+    margin: 10px 35%;
     border-radius: 5px;
-    padding: 10px auto;
+    padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.942);
     color: white;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .texto {
@@ -118,4 +127,54 @@ footer > a:hover {
     font-size: 17px;
     border: 1px solid white;
     color: yellow;
+}
+
+@media (max-width:600px){
+    .menu > .sobre {
+        color: white;
+        text-decoration: none;
+        margin: 3px 35px 3px 0px;
+        font-size: 22px;
+    }
+    .img {
+        border: 2px solid #1b0700;
+        object-fit: cover;
+        border-radius: 20px;
+        max-width: 35%;
+    }
+    
+    .intro {
+        text-align: center;
+        margin: 10px 15%;
+        border-radius: 5px;
+        padding: 5px 0px;
+        background-color: rgba(0, 0, 0, 0.942);
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:601px) and (max-width:1024px){
+    .menu > .sobre {
+        color: white;
+        text-decoration: none;
+        margin: 3px 45px 3px 0px;
+        font-size: 22px;
+    }
+    .img {
+        border: 2px solid #1b0700;
+        object-fit: cover;
+        border-radius: 20px;
+        max-width: 35%;
+    }
+    
+    .intro {
+        text-align: center;
+        margin: 10px 35%;
+        border-radius: 5px;
+        padding: 5px 0px;
+        background-color: rgba(0, 0, 0, 0.942);
+        color: white;
+        font-size: 20px;
+    }
 }
